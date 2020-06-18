@@ -1,0 +1,90 @@
+.wrap-form
+    margin-top: 30px
+    @media(min-width: 1025px)
+        margin-top: 0
+    input[type='text'], textarea
+        width: 100%
+        padding: 12px 20px
+        font-size: 15px
+        border: 1px solid #e9e9e9
+        color: #333333
+        caret-color: #eb7d3c
+        &:placeholder
+            color: #999999
+        &:focus
+            outline: none
+            border-color: #eb7d3c
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3)
+    textarea
+        height: 100px
+    &>div
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -5px
+        .qtext
+            padding: 0 5px
+            flex: 0 0 50%
+            margin-bottom: 20px
+            @media(max-width: 768px)
+                flex: 0 0 100%
+        .qparagraph
+            flex: 0 0 100%
+            padding: 0 5px
+            margin-bottom: 20px
+        .question-input
+            flex: 0 0 100%
+        span
+            color: red
+            font-size: 13px
+    // .frm-captcha
+    //     display: flex
+    //     align-items: center
+    //     flex-direction: row-reverse
+    //     justify-content: flex-end
+    //     display: flex
+    //     .frm-captcha-input
+    //         width: calc(100% - 227px)
+    //         label
+    //             display: none
+    //     .RadCaptcha
+    //         width: auto!important
+    //         position: relative
+    //         span
+    //             position: absolute
+    //             bottom: 100%
+    //         &>div>div
+    //             align-items: center
+    //             display: flex
+    //             width: 227px
+    //     .rcRefreshImage
+    //         margin: 0 10px
+    //         font-size: 0
+    //         &:after
+    //             content: url('/Data/Sites/1/media/change.png')
+    .frm-btnwrap
+        margin-top: 20px
+        label
+            display: none
+        .frm-btn-reset
+            display: none
+        .frm-btn
+            width: 100%
+        input
+            width: 100%
+            padding: 12px 30px
+            background: #eb7d3c
+            width: 100%
+            color: #fff
+            font-weight: 600
+            font-size: 16px
+            border: none
+            text-transform: uppercase
+    // @media(min-width: 768px)
+    //     .frm-captcha
+    //         width: 75%
+    //         float: left
+    //     .frm-btnwrap
+    //         float: left
+    //         margin-top: 0
+    //         width: 25%
+    //         margin-left: 10px

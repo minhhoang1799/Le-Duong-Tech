@@ -1,0 +1,29 @@
+{
+    "font": [
+        "bower_components/mdi/fonts/**",
+        "bower_components/font-awesome/webfonts/**",
+        "bower_components/linearicons/dist/web-font/fonts/**",
+        "src/fonts/**"
+    ],
+    "js": [
+        "bower_components/jquery/dist/jquery.min.js",
+        "src/plugins/mapping.js",
+        "src/plugins/mapping-listener.js",
+        "bower_components/swiper/dist/js/swiper.min.js",
+        "bower_components/plyr/dist/plyr.min.js",
+        "bower_components/jquery-toast-plugin/dist/jquery.toast.min.js",
+        "bower_components/jssocials/dist/jssocials.min.js",
+        "bower_components/vanilla-lazyload/dist/lazyload.min.js",
+        "bower_components/fancybox/dist/jquery.fancybox.js"
+    ],
+    "css": [
+        "src/plugins/addon.css",
+        "src/plugins/font.css",
+        "src/plugins/grid.css",
+        "bower_components/swiper/dist/css/swiper.min.css",
+        "bower_components/plyr/dist/plyr.css",
+        "bower_components/jquery-toast-plugin/dist/jquery.toast.min.css",
+        "bower_components/jssocials/dist/jssocials-theme-flat.css",
+        "bower_components/fancybox/dist/jquery.fancybox.css"
+    ]
+}

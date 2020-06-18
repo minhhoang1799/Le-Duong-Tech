@@ -1,0 +1,28 @@
+.language-wrapper
+    position: relative
+    user-select: none
+    .language-active
+        display: flex
+        cursor: pointer
+        justify-content: center
+        align-items: center
+        height: 100%
+    .language-list
+        position: absolute
+        top: 150%
+        transition: .6s ease-in-out all
+        opacity: 0
+        pointer-events: none
+        background: #f4f6f4
+        // left: 0
+        width: 100%
+        a
+            padding: 10px
+            display: flex
+            justify-content: center
+            align-items: center
+    &.active
+        .language-list
+            top: calc(100% + 2px)
+            opacity: 1
+            pointer-events: initial
