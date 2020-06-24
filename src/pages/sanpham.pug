@@ -1,0 +1,9 @@
+extends _layout.pug
+
+block var
+	- var title = 'Home'
+	- var bodyClass = 'Sản Phẩm'
+
+block main
+	include ../components/product/banner/index.pug
+	include ../components/product/product.pug

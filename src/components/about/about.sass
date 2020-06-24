@@ -1,0 +1,42 @@
+.about
+    padding-bottom: 6rem
+    .box-wrapper
+        .box-first
+            margin: 6rem 0
+            .main-title
+                h2
+                    text-align: left
+                    font-size: 2.4rem
+            .content
+                margin-top: 3rem
+                vertical-align: middle
+                p
+                    text-align: left 
+                    font-size: 1.6rem
+        .box-last
+            .image
+                width: 100%
+                img
+                    width: 100%
+@media (min-width: 1025px)
+    .about
+        .box-wrapper
+            margin-bottom: 6rem
+            .box-first
+                margin: 3rem 0
+                .content
+                    p
+                        font-size: 1.4rem
+            &:nth-child(2)
+                .box-first
+                    order: 2
+            &:last-child
+                margin-bottom: 0
+@media (min-width: 1200px)
+    .about
+        .box-wrapper
+            .box-first
+                margin: 6rem 0
+                .content
+                    p
+                        font-size: 1.6rem

@@ -1,0 +1,79 @@
+.giaiphap
+    padding: 5rem 0
+    .main-title
+        margin-bottom: 3rem
+    .box-wrapper
+        margin-bottom: 3rem
+        .image
+            width: 100%
+            img
+                width: 100%
+        .content-wrapper
+            background: #183064
+            padding: 3rem
+            .img-background
+                display: none
+            .title
+                h3
+                    font-size: 2.4rem
+                    font-weight: 700
+                    color: #fff
+                    text-transform: uppercase
+            .content
+                margin-top: 2.5rem
+                font-size: 1.4rem
+                color: #fff
+            .button
+                margin-top: 3rem
+                font-size: 1.4rem
+                color: #fff
+                text-transform: uppercase
+        &:first-child
+            .content-wrapper
+                background: #22448d
+@media (min-width: 768px)
+    .giaiphap
+        .box-wrapper
+            &:first-child
+                display: flex
+                .image
+                    height: 100%
+                    img
+                        height: 100%
+                .content-wrapper
+                    position: relative
+                    overflow: hidden
+                    padding: 10rem 4rem
+                    .img-background
+                        display: block
+                        position: absolute
+                        bottom: -30%
+                        right: -10rem
+                    .button
+                        a
+                            position: relative
+                            z-index: 999
+@media (min-width: 1200px)
+    .giaiphap
+        .box-wrapper
+            .content-wrapper
+                .button
+                    a
+                        position: relative
+                        &:hover
+                            &::before
+                                content: ''
+                                position: absolute
+                                bottom: 0
+                                left: 0
+                                width: 100%
+                                height: .1rem
+                                background: #fff
+            &:first-child
+                .content-wrapper
+                    .img-background
+                        display: block
+                        position: absolute
+                        bottom: -15%
+                        right: -8rem
+                            

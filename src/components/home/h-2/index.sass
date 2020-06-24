@@ -1,0 +1,93 @@
+.product-service
+    background: #183064
+    padding: 6rem 0
+    position: relative
+    .main-title
+        margin-bottom: 3rem
+        h2
+            color: #fff
+    .content
+        margin-top: 1.5rem
+        font-size: 1.8rem
+        font-weight: 600
+        color: #fff
+    .slider
+        position: relative
+        .swiper-prev
+            position: absolute
+            top: 20%
+            left: -1rem
+            transform: translateY(50%)
+            display: flex
+            align-items: center
+            justify-content: center
+            background: #fff
+            color: #333
+            width: 3rem
+            height: 3rem
+            cursor: pointer
+            z-index: 2
+            outline: none
+            em
+                font-size: 3rem
+        .swiper-next
+            position: absolute
+            top: 20%
+            right: -1rem
+            transform: translateY(50%)
+            display: flex
+            align-items: center
+            justify-content: center
+            background: #fff
+            color: #333
+            width: 3rem
+            height: 3rem
+            cursor: pointer
+            z-index: 2
+            outline: none
+            em
+                font-size: 3rem
+@media (min-width: 768px)
+    .product-service
+        .slider
+            .swiper-prev,.swiper-next
+                background: none
+                border: 1px solid #fff
+                color: #fff
+                em
+                    font-size: 1.6rem
+            .swiper-prev
+                left: -5%
+            .swiper-next
+                right: -5%
+@media (min-width: 1025px)
+    .product-service
+        .swiper-slide
+            .image
+                width: 100%
+                img
+                    width: 100%
+            &:hover
+                .image
+                    border: 2px solid #fff
+                .content
+                    position: relative
+                    display: inline-block
+                    &::before
+                        content: ''
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        background: #fff
+                        height: .1rem
+                        width: 100%                         
+        .swiper-prev
+            left: 5%
+            &:hover
+                background: #fff
+                color: #333
+        .swiper-next
+            right: 5%
+            &:hover
+                background: #fff
+                color: #333

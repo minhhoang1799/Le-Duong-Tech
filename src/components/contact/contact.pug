@@ -1,0 +1,56 @@
+section.contact-wrapper
+    .container
+        .main-title
+            h2 liên hệ
+        .row
+            .col-lg-4.box-wrapper
+                .wrapper
+                    .icon
+                        em.mdi.mdi-map-marker
+                    .content
+                        h2 Địa chỉ
+                        p Phòng 514, Toà nhà Sacom Chip Sáng,</br> Lô T2-4 đường D1, Khu Công Nghệ</br> Cao, P. Tân Phú, Q.9, TP.HCM
+            .col-lg-4.box-wrapper
+                .wrapper
+                    .icon
+                        em.mdi.mdi-email-outline
+                    .content
+                        h2 Email
+                        p contact@leduongtech.com
+            .col-lg-4.box-wrapper
+                .wrapper
+                    .icon
+                        em.mdi.mdi-phone
+                    .content
+                        h2 Điện thoại
+                        p 028 7307 6661
+        .map
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5031874705414!2d106.79786901526062!3d10.849280560810262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175274754826aa3%3A0x10a85ebee39cd0fb!2sSacom%20Chip%20Sang%20(%20SCS%20Building%20)!5e0!3m2!1svi!2s!4v1592560713905!5m2!1svi!2s',  height='550', frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0')
+        .form-wrapper
+            .form-title
+                p Xin vui lòng điền vào mẫu bên dưới rồi nhấn gửi để chúng tôi sớm liên hệ và giải đáp các ý kiến của bạn.
+            .form
+                .wrap-form
+                    .row
+                        .form-group.col-lg-6
+                            input(type="text",placeholder="Họ và tên")
+                        .form-group.col-lg-6
+                            input(type="text",placeholder="Địa chỉ")
+                        .form-group.col-lg-6
+                            input(type="email",placeholder="Email")
+                        .form-group.col-lg-6
+                            input(type="text",placeholder="Số điện thoại")
+                        .form-group.col-lg-12
+                            input(type="text", placeholder="Tiêu đề")
+                        .form-content.col-lg-12
+                            textarea(name="", cols="30", rows="10", placeholder="Nội dung")
+                        .form-content.col-lg-12
+                            .captcha
+                                .img
+                                    img(src="./img/contact/captcha.png", alt="", )
+                                a.mdi.mdi-replay(href="#")
+                                input(type="text", name="", placeholder="Nhập mã")
+                            .submit
+                                .button
+                                    input(type="submit", value="Gửi")
+                                    em.lnr.lnr-arrow-right

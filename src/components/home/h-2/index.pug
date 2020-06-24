@@ -1,0 +1,18 @@
+section.product-service
+    .container
+        .main-title
+            h2 sản phẩm & dịch vụ
+        .slider
+            .swiper-container
+                .swiper-wrapper
+                    - for(i=1;i<5;i++)
+                        .swiper-slide
+                            a(href="#")
+                                .image
+                                    img(src="./img/home/h-2/product1.png", alt="")
+                                .content
+                                    p Fire and gas system
+            .swiper-prev
+                em.lnr.lnr-arrow-left
+            .swiper-next
+                em.lnr.lnr-arrow-right

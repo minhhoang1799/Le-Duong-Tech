@@ -1,0 +1,163 @@
+.product-detail
+    padding: 6rem 0
+    .detail-wrapper
+        position: relative
+        .title
+            h2
+                font-size: 3.4rem
+                text-align: center
+                color: #183064
+                text-transform: uppercase
+        .slide-gallery
+            position: relative
+            .gallery-top
+                margin-bottom: 2rem
+                .image
+                    width: 100%
+                    height: 100%
+                    img
+                        width: 100%
+                        height: 100%
+            .gallery-thumbs
+                .swiper-slide-thumb-active
+                    .image
+                        border: 2px solid #183064
+            .swiper-prev
+                outline: none
+                position: absolute
+                bottom: 10%
+                transform: translateY(-50%)
+                left: -1.3rem
+                color: #183064
+                font-size: 3.4rem
+                z-index: 999
+            .swiper-next
+                outline: none
+                position: absolute
+                bottom: 10%
+                transform: translateY(-50%)
+                right: -1.3rem
+                z-index: 999
+                color: #183064
+                font-size: 3.4rem
+        .content
+            border-top: 1px solid #e0e0e0
+            margin-top: 3rem
+            padding: 3rem 0
+            p
+                font-size: 1.6rem
+                line-height: 2.4rem
+                &:last-child
+                    margin-top: 3rem
+        .button-bottom
+            margin-top: 1.5rem
+            text-align: center
+            color: #183064
+            font-size: 1.6rem
+            a
+                em
+                    margin-left: .5rem
+.product-plus
+    padding: 6rem 0
+    background: #f5f5f5
+    position: relative
+    .main-title
+        text-align: center
+    .product
+        margin-top: 3rem
+    .slider
+        position: relative
+        .swiper-prev
+            position: absolute
+            top: 50%
+            left: -1.3rem
+            transform: translateY(-50%)
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #666666
+            width: 3rem
+            height: 3rem
+            cursor: pointer
+            z-index: 2
+            outline: none
+            em
+                font-size: 3rem
+        .swiper-next
+            position: absolute
+            top: 50%
+            right: -1.3rem
+            transform: translateY(-50%)
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #666666
+            width: 3rem
+            height: 3rem
+            cursor: pointer
+            z-index: 2
+            outline: none
+            em
+                font-size: 3rem
+@media (min-width: 576px)
+    .product-detail
+        .detail-wrapper
+            .slide-gallery
+                .swiper-prev
+                    bottom: 5%
+                .swiper-next
+                    bottom: 5%
+@media (min-width: 768px)
+    .product-detail
+        .detail-wrapper
+            .slide-gallery
+                .swiper-prev
+                    left: -5%
+                    font-size: 2.4rem
+                .swiper-next
+                    right: -5%
+                    font-size: 2.4rem
+    .product-plus
+        .slider
+            .swiper-prev,.swiper-next
+                background: none
+                border: 1px solid #e1e1e1
+                color: #666666
+                em
+                    font-size: 1.6rem
+            .swiper-prev
+                left: -5%
+            .swiper-next
+                right: -5%
+@media (min-width: 1025px)
+    .product-detail
+        .detail-wrapper
+            .slide-gallery
+                .swiper-prev
+                    bottom: 5%
+                    cursor: pointer
+                    color:  #666666
+                    &:hover
+                        color: #183064
+                .swiper-next
+                    bottom: 5%
+                    cursor: pointer
+                    color:  #666666
+                    &:hover
+                        color: #183064
+    .product-plus
+        .slider
+            a
+                &:hover
+                    .image
+                        border: 1px solid #22448d
+            .swiper-prev
+                &:hover
+                    background: #22448d
+                    border: none
+                    color: #fff
+            .swiper-next
+                &:hover
+                    background: #22448d
+                    border: none
+                    color: #fff

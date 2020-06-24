@@ -1,13 +1,55 @@
-body, html
-    font-size: 16px
+html
+    font-size: 62.5%  //1rem =10px  
     overflow-x: hidden
-    color: #333
-    img
-        max-width: 100%
-        object-fit: cover
-    a, a:hover, a:focus
-        color: inherit
-        outline: none
-    ul
-        list-style: none
-        padding-left: 0
+    @media (max-width: 1024px)
+        font-size: 56.25% //1rem=9px
+    @media (max-width: 767px)
+        font-size: 50% //1rem=8px
+    body
+        font-size: 16px
+        overflow-x: hidden
+        color: #333
+        img
+            max-width: 100%
+            object-fit: cover
+        a, a:hover, a:focus
+            color: inherit
+            outline: none
+        ul
+            list-style: none
+            padding-left: 0
+        .main-title
+            h2
+                font-size: 3.4rem
+                font-weight: 700
+                color: #183064
+                text-transform: uppercase
+        .product
+            margin-bottom: 3rem
+            .image
+                width: 100%
+                img
+                    width: 100%
+            .title
+                padding: 1rem 3rem
+                background: #183064
+                font-size: 1.8rem
+                font-weight: 600
+                color: #fff
+            .content-wrapper
+                padding: 3rem
+                box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .1)
+                .content
+                    height: 72px
+                    font-size: 1.6rem
+                    line-height: 2.4rem
+                    overflow: hidden
+                    text-overflow: ellipsis
+                    -webkit-line-clamp: 3
+                    display: -webkit-box
+                    -webkit-box-orient: vertical
+                .button
+                    margin-top: 1.5rem
+                    a
+                        color: #183064
+                        font-size: 1.2rem

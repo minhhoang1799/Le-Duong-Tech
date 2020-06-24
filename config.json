@@ -11,7 +11,6 @@
         "src/plugins/mapping-listener.js",
         "bower_components/swiper/dist/js/swiper.min.js",
         "bower_components/plyr/dist/plyr.min.js",
-        "bower_components/jquery-toast-plugin/dist/jquery.toast.min.js",
         "bower_components/jssocials/dist/jssocials.min.js",
         "bower_components/vanilla-lazyload/dist/lazyload.min.js",
         "bower_components/fancybox/dist/jquery.fancybox.js"
@@ -22,7 +21,6 @@
         "src/plugins/grid.css",
         "bower_components/swiper/dist/css/swiper.min.css",
         "bower_components/plyr/dist/plyr.css",
-        "bower_components/jquery-toast-plugin/dist/jquery.toast.min.css",
         "bower_components/jssocials/dist/jssocials-theme-flat.css",
         "bower_components/fancybox/dist/jquery.fancybox.css"
     ]

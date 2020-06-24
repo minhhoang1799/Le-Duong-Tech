@@ -1,0 +1,51 @@
+section.product-detail
+    .detail-wrapper
+        .container
+            .title
+                h2 Factory Automation
+            .slide-gallery
+                .swiper-container.gallery-top
+                    .swiper-wrapper
+                        - for(i=1;i<6;i++)
+                            .swiper-slide
+                                .image
+                                    img(src="./img/product/product.png", alt="")
+                .swiper-container.gallery-thumbs
+                    .swiper-wrapper
+                        - for(i=1;i<6;i++)
+                            .swiper-slide
+                                .image
+                                    img(src="./img/product/product-"+i+".png", alt="")
+                .swiper-prev
+                    em.lnr.lnr-arrow-left
+                .swiper-next
+                    em.lnr.lnr-arrow-right
+            .content
+                p Với đội ngũ kỹ sư tự động hóa có nhiều năm kinh nghiệm thực hiện các dự án đa dạng, trãi qua nhiều mảng ngành công nghiệp như thực phẩm, đồ uống, dược phẩm, sản xuất giấy, nhà máy sản xuất thiết bị điện tử, pin năng lượng mặt trời, lắp ráp phương tiện gia dụng, lắp ráp ô tô và cả các hệ thống trong ngành dầu khí, nhà máy hóa chất, giàn khoan, giếng khai thác, cũng như mảng năng lượng tái tạo các turbine điện gió.
+                p Lê Dương tự tin nắm bắt yêu cầu kỹ thuật, yêu cầu vận hành, cùng với kiến thức về hệ điều khiển, thiết bị trường từ đó có thể xây dựng giải pháp điều khiển tối ưu, hệ thống quản lý dữ liệu hiệu quả.
+            .button-bottom
+                a(href="#") Xem thêm
+                    em.lnr.lnr-arrow-down
+section.product-plus
+    .main-title
+        h2 sản phẩm & dịch vụ khác
+    .container
+        .slider
+            .swiper-container
+                .swiper-wrapper
+                    - for(i=1;i<4;i++)
+                        .swiper-slide
+                            .product
+                                .image
+                                    img(src="./img/product/product1.png", alt="")
+                                .title
+                                    a(href="#") Fire and gas system
+                                .content-wrapper
+                                    .content
+                                        p Cung cấp các dịch vụ Gas Mapping, thiết kế, thi công, lắp đặt và hướng dẫn vận hành hệ thống hệ thống giám sát và dò rò rỉ khí, phát hiện tia lửa.
+                                    .button
+                                        a(href="#") Xem chi tiết
+            .swiper-prev
+                em.lnr.lnr-arrow-left
+            .swiper-next
+                em.lnr.lnr-arrow-right

@@ -1,0 +1,49 @@
+.product-wrapper
+    padding: 6rem 0
+    .main-title
+        text-align: center
+        margin-bottom: 2.5rem
+    .product
+        margin-bottom: 3rem
+        .image
+            width: 100%
+            img
+                width: 100%
+        .title
+            padding: 1rem 3rem
+            background: #183064
+            font-size: 1.8rem
+            font-weight: 600
+            color: #fff
+        .content-wrapper
+            padding: 3rem
+            box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .1)
+            .content
+                height: 72px
+                font-size: 1.6rem
+                line-height: 2.4rem
+                overflow: hidden
+                text-overflow: ellipsis
+                -webkit-line-clamp: 3
+                display: -webkit-box
+                -webkit-box-orient: vertical
+            .button
+                margin-top: 1.5rem
+                a
+                    color: #183064
+                    font-size: 1.2rem
+@media (min-width: 1025px)
+    .product-wrapper
+        .content-wrapper
+            .button
+                a
+                    position: relative
+                    &:hover
+                        &::before
+                            content: ''
+                            position: absolute
+                            bottom: 0
+                            left: 0
+                            width: 100%
+                            height: .1rem
+                            background: #183064
