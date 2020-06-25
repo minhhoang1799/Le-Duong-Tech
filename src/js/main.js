@@ -145,6 +145,7 @@ function swiperHomeSlideInit(){
         slidesPerView: 4,
         spaceBetween: 30,
         loop: true,
+        autoplay: true,
         navigation: {
             nextEl: '.product-service .swiper-next',
             prevEl: '.product-service .swiper-prev'
@@ -173,6 +174,7 @@ function swiperHome(){
         slidesPerView: 6,
         spaceBetween: 20,
         loop: true,
+        autoplay: true,
         navigation: {
             nextEl: '.doitac .swiper-next',
             prevEl: '.doitac .swiper-prev'

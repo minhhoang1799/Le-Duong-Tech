@@ -14,14 +14,21 @@
                 margin-bottom: 2rem
                 .image
                     width: 100%
-                    height: 100%
+                    height: 65rem
                     img
                         width: 100%
                         height: 100%
             .gallery-thumbs
+                .swiper-slide
+                    .image
+                        width: 100%
+                        height: 16rem
+                        img
+                            width: 100%
+                            height: 100%
                 .swiper-slide-thumb-active
                     .image
-                        border: 2px solid #183064
+                        border: 2px solid #183064                    
             .swiper-prev
                 outline: none
                 position: absolute
@@ -65,6 +72,35 @@
         text-align: center
     .product
         margin-top: 3rem
+        .image
+            width: 100%
+            height: 27.4rem
+            img
+                width: 100%
+                height: 100%
+        .title
+            padding: 1rem 2rem 1rem 3rem
+            background: #183064
+            font-size: 1.8rem
+            font-weight: 600
+            color: #fff
+        .content-wrapper
+            padding: 3rem
+            box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .1)
+            .content
+                height: 72px
+                font-size: 1.6rem
+                line-height: 2.4rem
+                overflow: hidden
+                text-overflow: ellipsis
+                -webkit-line-clamp: 3
+                display: -webkit-box
+                -webkit-box-orient: vertical
+            .button
+                margin-top: 1.5rem
+                a
+                    color: #183064
+                    font-size: 1.2rem
     .slider
         position: relative
         .swiper-prev
@@ -147,6 +183,9 @@
                         color: #183064
     .product-plus
         .slider
+            .product
+                .title
+                    font-size: 1.4rem
             a
                 &:hover
                     .image
@@ -161,3 +200,9 @@
                     background: #22448d
                     border: none
                     color: #fff
+@media (min-width: 1200px)
+    .product-plus
+        .slider
+            .product
+                .title
+                    font-size: 1.8rem

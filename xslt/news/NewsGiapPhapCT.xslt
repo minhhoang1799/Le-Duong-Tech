@@ -33,7 +33,9 @@
                     <div class="title">
                         <h3><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of><xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of></h3>
                     </div>
+                    <div class="content">
                     <xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6">
