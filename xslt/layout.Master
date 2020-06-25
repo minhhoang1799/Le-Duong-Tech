@@ -218,7 +218,6 @@ Facebook: https://fb.com/canhcam.vn
                 <asp:Panel ID="divAltContent2" runat="server" CssClass="altcontent2">
                     <asp:ContentPlaceHolder ID="altContent2" runat="server"></asp:ContentPlaceHolder>
                 </asp:Panel>
-                <portal:ModuleWrapper ID="mdl158" runat="server" ConfigureModuleId="158" />
             </main>
             <!-- ////////////// End Main ////////////// -->
             <!-- ////////////// Footer ////////////// -->
