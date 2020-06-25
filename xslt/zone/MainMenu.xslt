@@ -2,13 +2,13 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
 <xsl:output method="html" indent="yes"/>
   <xsl:template match="/">
-     <ul>
-        <xsl:apply-templates select="ZoneList/Zone"></xsl:apply-templates>
+    <ul>
+        <xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
       </ul>
   </xsl:template>
-  <xsl:template match="Zone">
-    <li>
-        <xsl:if test="IsActive='true'">
+  <xsl:template match="/Zone">
+      <li>
+        <xsl:if test="IsActive=''true">
           <xsl:attribute name="class">
             <xsl:text disable-output-escaping="yes">active</xsl:text>
           </xsl:attribute>
@@ -22,7 +22,7 @@
           </xsl:attribute>
           <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
         </a>
-    </li>
 
+      </li>
   </xsl:template>
 </xsl:stylesheet>

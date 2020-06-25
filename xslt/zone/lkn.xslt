@@ -5,10 +5,9 @@
         <div class="title">
             <h2><xsl:value-of select="/ZoneList/ModuleTitle" disable-output-escaping="yes"></xsl:value-of></h2>
         </div>
-    <ul class="nav-footer">
-    <xsl:apply-templates select="ZoneList/Zone"></xsl:apply-templates>
-        
-    </ul>
+        <ul class="nav-footer">
+            <xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
+        </ul>
     </xsl:template>
     <xsl:template match="Zone">
         <li>
@@ -23,5 +22,4 @@
             </a>
         </li>
     </xsl:template>
-
 </xsl:stylesheet>

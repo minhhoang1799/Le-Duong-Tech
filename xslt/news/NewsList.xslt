@@ -5,17 +5,16 @@
     <section class="product-wrapper">
 				<div class="container">
 					<div class="main-title">
-						<h2><xsl:value-of select="/NewsList/ZoneTitle" disable-output-escaping="yes"></xsl:value-of></h2>
+						<h2><xsl:value-of select="/NewsList/NewsTitle" disable-output-escaping="yes"></xsl:value-of></h2>
 					</div>
 					<div class="row">
-              <xsl:apply-templates select="NewsList/News"></xsl:apply-templates>
-					
+						<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
 					</div>
 				</div>
 			</section>
   </xsl:template>
   <xsl:template match="News">
-    	<div class="col-sm-6 col-lg-4 product">
+    <div class="col-sm-6 col-lg-4 product">
 							<div class="image">
                 <a>
                   <xsl:attribute name="href">
@@ -23,9 +22,6 @@
                   </xsl:attribute>
                   <xsl:attribute name="title">
                     <xsl:value-of select="Title"></xsl:value-of>
-                  </xsl:attribute>
-                  <xsl:attribute name="target">
-                    <xsl:value-of select="Target"></xsl:value-of>
                   </xsl:attribute>
                   <img>
                     <xsl:attribute name="src">
@@ -45,9 +41,6 @@
                     <xsl:attribute name="title">
                       <xsl:value-of select="Title"></xsl:value-of>
                     </xsl:attribute>
-                    <xsl:attribute name="target">
-                      <xsl:value-of select="Target"></xsl:value-of>
-                    </xsl:attribute>
                     <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
                   </a>
                   <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
@@ -57,19 +50,16 @@
 									<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
 								</div>
 								<div class="button">
-                  <a>
-                    <xsl:attribute name="href">
-                      <xsl:value-of select="Url"></xsl:value-of>
-                    </xsl:attribute>
-                    <xsl:attribute name="title">
-                      <xsl:value-of select="Title"></xsl:value-of>
-                    </xsl:attribute>
-                    <xsl:attribute name="target">
-                      <xsl:value-of select="Target"></xsl:value-of>
-                    </xsl:attribute> 
-                    Xem chi tiết
-                  </a></div>
-						</div>
+                    <a>
+                      <xsl:attribute name="href">
+                        <xsl:value-of select="Url"></xsl:value-of>
+                      </xsl:attribute>
+                      <xsl:attribute name="title">
+                        <xsl:value-of select="Title"></xsl:value-of>
+                      </xsl:attribute> Xem chi tiết
+                    </a>
+                </div>
+							</div>
 						</div>
   </xsl:template>
 </xsl:stylesheet>

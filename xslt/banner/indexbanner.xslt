@@ -5,46 +5,47 @@
         <section class="home-banner">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
-                        <xsl:apply-templates select="/BannerList/Banner"></xsl:apply-templates>
-						
+						<xsl:apply-templates select="/BannerList/Banner"></xsl:apply-templates>
 					</div>
 				</div>
 			</section>
     </xsl:template>
     <xsl:template match="Banner">
-        <div class="swiper-slide"><a href="#">
+        <div class="swiper-slide">
             <div class="image">
-                <img>
-                    <xsl:attribute name="src">
-                        <xsl:value-of select="ImageUrl"></xsl:value-of>
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="Url"></xsl:value-of>
                     </xsl:attribute>
-                    <xsl:attribute name="alt">
+                    <xsl:attribute name="title">
                         <xsl:value-of select="Title"></xsl:value-of>
                     </xsl:attribute>
-                </img>
-            </div>
-                <div class="box-wrapper">
-                    <div class="title">
-                        <h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></h2>
-                    </div>
-                    <div class="content">
-                        <xsl:value-of select="Description" disable-output-escaping="yes"></xsl:value-of>
-                    </div>
-                    <div class="button">
-                        <a href="#">
-                                <xsl:attribute name="href">
-                                    <xsl:value-of select="Url"></xsl:value-of>
-                                </xsl:attribute>
-                                <xsl:attribute name="title">
-                                    <xsl:value-of select="Title"></xsl:value-of>
-                                </xsl:attribute>
-                                <xsl:attribute name="target">
-                                    <xsl:value-of select="Target"></xsl:value-of>
-                                </xsl:attribute>
-                        xem thêm</a>
-                        <em class="lnr lnr-arrow-right"></em></div>
-                        </div>
+                    <img>
+                        <xsl:attribute name="src">
+                            <xsl:value-of select="ImageUrl"></xsl:value-of>
+                        </xsl:attribute>
+                        <xsl:attribute name="alt">
+                            <xsl:value-of select="Title"></xsl:value-of>
+                        </xsl:attribute>
+                    </img>
                 </a>
-        </div>
+            </div>
+            <div class="box-wrapper">
+                <div class="title">
+                    <h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></h2>
+                </div>
+                <div class="content">
+                    <xsl:value-of select="Description" disable-output-escaping="yes"></xsl:value-of>
+                </div>
+                <div class="button"><a>
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="Url"></xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:attribute name="title">
+                        <xsl:value-of select="Title"></xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:text disable-output-escaping="yes">Xem thêm</xsl:text>
+                </a><em class="lnr lnr-arrow-right"></em></div>
+            </div></div>
     </xsl:template>
 </xsl:stylesheet>

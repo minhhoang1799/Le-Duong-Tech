@@ -94,6 +94,16 @@
                     margin: 1rem
                     &:first-child
                         margin-left: 0
+                        position: relative
+                        &::before
+                            position: absolute
+                            content: ''
+                            top: 50%
+                            transform: translateY(-50%)
+                            right: -1rem
+                            width: .1rem
+                            height: 1.5rem
+                            background: #000
                     &:last-child
                         margin-right: 0
 @media (min-width: 768px)

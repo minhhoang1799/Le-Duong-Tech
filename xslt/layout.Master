@@ -29,7 +29,7 @@ Facebook: https://fb.com/canhcam.vn
     <link rel="icon" type="image/png" sizes="96x96" href="/Data/Sites/1/skins/default/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/Data/Sites/1/skins/default/favicon/favicon-16x16.png">
     <link rel="manifest" href="/Data/Sites/1/skins/default/favicon/manifest.json">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700&amp;subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700&amp;amp;subset=vietnamese" rel="stylesheet"><link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="msapplication-TileColor">
     <meta name="msapplication-TileImage" content="/Data/Sites/1/skins/default/favicon/ms-icon-144x144.png">
@@ -163,26 +163,19 @@ Facebook: https://fb.com/canhcam.vn
                 <div class="container">
                     <div class="header-wrapper">
                         <div class="logo">
-                            <div class="image">
-                                <portal:ModuleWrapper ID="mdl138" runat="server" ConfigureModuleId="138" />
-                                
-                            </div>
+                            <portal:ModuleWrapper ID="mdl152" runat="server" ConfigureModuleId="152" />
                         </div>
                         <div class="header-top">
                             <div class="nav-top">
-                                <portal:ModuleWrapper ID="mdl143" runat="server" ConfigureModuleId="143" />
-                                
+                                <portal:ModuleWrapper ID="mdl153" runat="server" ConfigureModuleId="153" />
                                 <div class="hotline">
-                                    <portal:ModuleWrapper ID="mdl139" runat="server" ConfigureModuleId="139" />
-                                    
-                                    </div>
-                                <div class="search-box">
-                                    <portal:ModuleWrapper ID="mdl140" runat="server" ConfigureModuleId="140" />
-                                    
+                                    <portal:ModuleWrapper ID="mdl154" runat="server" ConfigureModuleId="154" />
                                 </div>
-                                <div class="language">
-                                    <portal:ModuleWrapper ID="mdl142" runat="server" ConfigureModuleId="142" />
-                                    </div>
+                                <div class="search-box">
+                                    <portal:ModuleWrapper ID="mdl155" runat="server" ConfigureModuleId="155" />
+                                </div>
+                                <div class="language"><a href="#">
+                                    <portal:ModuleWrapper ID="mdl156" runat="server" ConfigureModuleId="156" />
                                 <div class="button-toggle">
                                     <div class="button"></div>
                                 </div>
@@ -190,8 +183,7 @@ Facebook: https://fb.com/canhcam.vn
                         </div>
                         <div class="header-bottom">
                             <div class="nav-bottom">
-                                <portal:ModuleWrapper ID="mdl144" runat="server" ConfigureModuleId="144" />
-                               
+                                <portal:ModuleWrapper ID="mdl157" runat="server" ConfigureModuleId="157" />
                             </div>
                         </div>
                     </div>
@@ -226,34 +218,29 @@ Facebook: https://fb.com/canhcam.vn
                 <asp:Panel ID="divAltContent2" runat="server" CssClass="altcontent2">
                     <asp:ContentPlaceHolder ID="altContent2" runat="server"></asp:ContentPlaceHolder>
                 </asp:Panel>
-                <portal:ModuleWrapper ID="mdl146" runat="server" ConfigureModuleId="146" />
-                <portal:ModuleWrapper ID="mdl145" runat="server" ConfigureModuleId="145" />
+                <portal:ModuleWrapper ID="mdl158" runat="server" ConfigureModuleId="158" />
             </main>
             <!-- ////////////// End Main ////////////// -->
-
             <!-- ////////////// Footer ////////////// -->
             <footer>
                 <div class="footer-wrapper" setbackground="/Data/Sites/1/media/footer/background-footer.png">
                     <div class="container">
                         <div class="row">
-
                             <div class="col-md-5">
-                                <portal:ModuleWrapper ID="mdl147" runat="server" ConfigureModuleId="147" />
-                                
+                               <portal:ModuleWrapper ID="mdl159" runat="server" ConfigureModuleId="159" />
                             </div>
                             <div class="col-md-4">
-                                <portal:ModuleWrapper ID="mdl148" runat="server" ConfigureModuleId="148" />
-                               
+                                <portal:ModuleWrapper ID="mdl160" runat="server" ConfigureModuleId="160" />
                             </div>
                             <div class="col-md-3">
-                               <portal:ModuleWrapper ID="mdl149" runat="server" ConfigureModuleId="149" />
+                               <portal:ModuleWrapper ID="mdl161" runat="server" ConfigureModuleId="161" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="footer-bottom">
                     <div class="container">
-                       <portal:ModuleWrapper ID="mdl150" runat="server" ConfigureModuleId="150" />
+                        <portal:ModuleWrapper ID="mdl164" runat="server" ConfigureModuleId="164" />
                     </div>
                 </div>
             </footer>
