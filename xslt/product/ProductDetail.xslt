@@ -35,16 +35,7 @@
                         <xsl:value-of select="/ProductDetail/FullContent" disable-output-escaping="yes"></xsl:value-of>
                     </div>
                     <div class="button-bottom">
-                        <a>
-                            <xsl:attribute name="href">
-                                <xsl:value-of select="Url"></xsl:value-of>
-                            </xsl:attribute>
-                            <xsl:attribute name="title">
-                                <xsl:value-of select="Title"></xsl:value-of>
-                            </xsl:attribute> Xem thêm
-                                
-                            <em class="lnr lnr-arrow-down"></em>
-                        </a>
+                        <div class="button">Xem thêm</div>
                     </div>
                 </div>
             </div>

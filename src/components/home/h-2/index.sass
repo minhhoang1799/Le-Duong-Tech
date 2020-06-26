@@ -13,16 +13,24 @@
         color: #fff
     .slider
         position: relative
+        .swiper-wrapper
+            .swiper-slide
+                a
+                    .image
+                        width: auto
+                        height: 20rem
+                        img
+                            width: 100%
+                            height: 100%
         .swiper-prev
             position: absolute
-            top: 20%
+            top: 25%
             left: -1rem
             transform: translateY(50%)
             display: flex
             align-items: center
             justify-content: center
-            background: #fff
-            color: #333
+            color: #fff
             width: 3rem
             height: 3rem
             cursor: pointer
@@ -32,14 +40,13 @@
                 font-size: 3rem
         .swiper-next
             position: absolute
-            top: 20%
+            top: 25%
             right: -1rem
             transform: translateY(50%)
             display: flex
             align-items: center
             justify-content: center
-            background: #fff
-            color: #333
+            color: #fff
             width: 3rem
             height: 3rem
             cursor: pointer
@@ -64,7 +71,6 @@
     .product-service
         .swiper-slide
             .image
-                width: 100%
                 img
                     width: 100%
             &:hover
@@ -91,3 +97,8 @@
             &:hover
                 background: #fff
                 color: #333
+@media (min-width: 1200px)
+    .product-service
+        .swiper-slide
+            .image
+                width: 28.5rem !important

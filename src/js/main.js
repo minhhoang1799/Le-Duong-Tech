@@ -47,6 +47,7 @@ const App = {
         swiperHomeSlideInit()
         swiperHome()
         gallery()
+        toggleViews()
     }
 }
 
@@ -60,10 +61,10 @@ $(document).ready(function() {
 function height(){
     let e = $('header').outerHeight()
     $('header .nav-mobile').css({
-        'height': 'calc(100vh - '+(e)+'px )'
+        'height': 'calc(100vh - '+(e+30.5)+'px )'
     })
     $('header .back-drop').css({
-        'height': 'calc(100vh - '+(e)+'px )'
+        'height': 'calc(100vh - '+(e+30.5)+'px )'
     })
 }
 //nav
@@ -124,7 +125,7 @@ function mappingInit(){
 //swiper
 function swiperInit(){
     let HomeBanner = new Swiper('.home-banner .swiper-container', {
-        speed: 1000,
+        speed: 1500,
         slidesPerView: 1,
         loop: true,
         autoplay: true,
@@ -143,9 +144,9 @@ function swiperHomeSlideInit(){
     let HomeBanner = new Swiper('.product-service .swiper-container', {
         speed: 1000,
         slidesPerView: 4,
-        spaceBetween: 30,
+        spaceBetween: 40,
         loop: true,
-        autoplay: true,
+        // autoplay: true,
         navigation: {
             nextEl: '.product-service .swiper-next',
             prevEl: '.product-service .swiper-prev'
@@ -156,14 +157,17 @@ function swiperHomeSlideInit(){
         },
 
         breakpoints: {
-			768: {
+            1200: {
                 slidesPerView: 3,
                 spaceBetween: 10
-			},
-			576: {
+            },
+            576: {
                 slidesPerView: 2,
-                spaceBetween: 10
-			},
+                spaceBetween: 30
+            },
+            375: {
+                slidesPerView: 1,
+            },
 		}
 	})
 
@@ -254,4 +258,11 @@ function gallery(){
 			},
 		}
 	})
+}
+
+
+function toggleViews(){
+    $('.product-detail .detail-wrapper .button-bottom .button').on('click', function(){
+        $('.product-detail .detail-wrapper .content').toggleClass('active')
+    })
 }

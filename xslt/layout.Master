@@ -176,10 +176,10 @@ Facebook: https://fb.com/canhcam.vn
                                 </div>
                                 <div class="language"><a href="#">
                                     <portal:ModuleWrapper ID="mdl156" runat="server" ConfigureModuleId="156" />
+                                </div>
                                 <div class="button-toggle">
                                     <div class="button"></div>
                                 </div>
-                            </div>
                         </div>
                         <div class="header-bottom">
                             <div class="nav-bottom">
