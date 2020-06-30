@@ -48,6 +48,8 @@ const App = {
         swiperHome()
         gallery()
         toggleViews()
+        viewdetail()
+        giaiphap()
     }
 }
 
@@ -201,6 +203,33 @@ function swiperHome(){
 	})
 
 }
+function giaiphap(){
+    let productplus = new Swiper('.giaiphap-plus .swiper-container', {
+        speed: 1000,
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: '.product-plus .swiper-next',
+            prevEl: '.product-plus .swiper-prev'
+        },
+        pagination: {
+            el: '.product-plus .swiper-pagination',
+            clickable: true
+        },
+
+        breakpoints: {
+			1025: {
+                slidesPerView: 2,
+                spaceBetween: 10
+			},
+			576: {
+                slidesPerView: 1,
+                spaceBetween: 10
+			},
+		}
+	})
+}
 function gallery(){
     var galleryThumbs = new Swiper('.product-detail .gallery-thumbs', {
         spaceBetween: 10,
@@ -225,6 +254,8 @@ function gallery(){
         });
     var galleryTop = new Swiper('.product-detail .gallery-top', {
     spaceBetween: 10,
+    // autoplay: true,
+    speed: 1000,
     navigation: {
         nextEl: '.product-detail .swiper-next',
         prevEl: '.product-detail .swiper-prev',
@@ -265,4 +296,13 @@ function toggleViews(){
     $('.product-detail .detail-wrapper .button-bottom .button').on('click', function(){
         $('.product-detail .detail-wrapper .content').toggleClass('active')
     })
+}
+function viewdetail(){
+    var e =  $('.product-detail .detail-wrapper .content').outerHeight()
+    if(e >= 115){
+       $('.product-detail .detail-wrapper .button-bottom .button').css({
+        "display": "block"
+    })  
+    }
+    
 }

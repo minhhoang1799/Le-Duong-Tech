@@ -7,12 +7,15 @@
             font-size: 3.4rem
             color: #ffffff
     .form
+        margin-top: 5rem
+        padding: 0 1rem
         .form-group
             font-size: 1.4rem
             color: #fff
             margin-bottom: 3rem
             label
                 margin-bottom: 1.5rem
+                font-size: 16px
             input
                 background: #fff
                 opacity: .8
@@ -20,9 +23,11 @@
                 height: 5rem
                 border: none
                 outline: none
+                font-size: 16px
             textarea
                 background: #fff
                 opacity: .8
+                font-size: 16px
         .wrap-form
             .frm-btnwrap
                 width: 20rem
@@ -49,6 +54,7 @@
                     border: none
                     color: #fff
                     opacity: 1
+                    margin-left: -.5rem
 .footer-wrapper
     padding: 5rem 0
     .title
@@ -57,11 +63,11 @@
             color: #ffffff
             font-weight: 800
             text-transform: uppercase
-            margin-bottom: 2.5rem
+            margin: 3rem 0 2rem 0
     .location,.contact,.hotline
         display: flex
         color: #fff
-        font-size: 1.4rem
+        font-size: 16px
         line-height: 3rem
         font-weight: 300
         em
@@ -69,9 +75,13 @@
     .nav-footer
         li
             color: #fff
-            font-size: 1.4rem
+            font-size: 16px
             line-height: 3rem
             font-weight: 300
+            margin: 1.5rem 0
+            &:first-child
+                margin-top: 0
+            
     .social
         display: flex
         .icon
@@ -86,8 +96,20 @@
                 margin-left: 0
         .facebook
             background: #3853a1
+            a    
+                width: 100%
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
         .youtube
             background: #de4625
+            a    
+                width: 100%
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
         .twitter
             background: #00a7f7
 .footer-bottom
@@ -121,6 +143,9 @@
                         margin-right: 0
 @media (min-width: 768px)
     .footer-wrapper
+        .title
+            h2
+                margin: 0 0 2.5rem 0
         .nav-footer
             margin-top: 2.5rem
         .social
@@ -151,6 +176,7 @@
         .nav-footer
             margin-top: 0
             li
+                margin: 0
                 a
                     &:hover
                         border-bottom: 1px solid #fff

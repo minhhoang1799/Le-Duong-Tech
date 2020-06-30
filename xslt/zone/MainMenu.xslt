@@ -6,9 +6,9 @@
         <xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
       </ul>
   </xsl:template>
-  <xsl:template match="/Zone">
+  <xsl:template match="Zone">
       <li>
-        <xsl:if test="IsActive=''true">
+        <xsl:if test="IsActive='true'">
           <xsl:attribute name="class">
             <xsl:text disable-output-escaping="yes">active</xsl:text>
           </xsl:attribute>
