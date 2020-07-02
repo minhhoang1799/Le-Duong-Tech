@@ -2,172 +2,208 @@
     .header-wrapper
         display: flex
         justify-content: space-between
-        padding: 1.5rem
-        position: relative
+        padding-top: 1.5rem
         .logo
             max-width: 30rem
             svg
                 width: 100%
-        .header-top
-            .nav-top
-                display: flex
-                justify-content: space-between
-                align-items: center
-                ul
+        .header-right
+            .header-top
+                .nav-top
                     display: flex
-                    li
-                        font-size:  1.4rem
-                        color: #666666
-                        &:first-child
-                            position: relative
-                            &::after
-                                content: ''
-                                width: 1px
-                                height: 1.5rem
-                                background: #666666
-                                position: absolute
-                                top: 50%
-                                transform: translateY(-50%)
-                                right: -.8rem
-                        &:nth-child(2)
-                            margin: 0 1.5rem
-                        &:hover,&.active
-                            color: #183064
-                            position: relative
-                            &::before
-                                content: ''
-                                position: absolute
-                                bottom: -.5rem
-                                width: 100%
-                                height: .2rem
-                                background: #000
+                    justify-content: space-between
+                    align-items: center
+                    ul
+                        display: flex
+                        li
+                            font-size:  1.4rem
+                            color: #666666
+                            &:first-child
+                                position: relative
+                                &::after
+                                    content: ''
+                                    width: 1px
+                                    height: 1.5rem
+                                    background: #666666
+                                    position: absolute
+                                    top: 50%
+                                    transform: translateY(-50%)
+                                    right: -.8rem
+                            &:nth-child(2)
+                                margin: 0 1.5rem
+                            &:hover,&.active
                                 color: #183064
-                .hotline
-                    background: #183064
-                    color: #fff
-                    padding: 0 1.5rem
-                    border-radius: .5rem
-                    margin: 0 2rem
-                    a
-                        display: flex
-                        align-items: center
-                        font-size: 1.2rem
-                        em
-                            font-size: 1.6rem
-                            margin-right: .5rem
-                .search-box
-                    display: flex
-                    position: relative
-                    &::after
-                        content: '\f349'
-                        font-family: Material Design Icons
-                        position: absolute
-                        top: 50%
-                        right: 1rem
-                        transform: translateY(-50%)
-                        font-size: 2rem
-                        color: #183064
-                    input[type=text]
-                        border: 1px solid #ebebeb
-                        border-radius: .5rem
-                        padding: 0 1rem
-                        position: relative
-                    button
-                        border: none
-                        display: none
-                    em
-                        position: absolute
-                        top: 50%
-                        right: 2.5rem
-                        transform: translateY(-50%)
-                        font-size: 2rem
-                        color: #183064
-                        cursor: pointer
-                .language
-                    margin-left: 2rem
-                    a
-                        display: flex
-                        .image
-                            margin-right: .5rem
-                .button-toggle
-                    display: none
-                    .button
-                        width: 3rem
-                        height: 2px
-                        background: #000
-                        position: relative
-                        transition: .7s
-                        &::after
-                            content: ''
-                            position: absolute
-                            bottom: 1rem
-                            width: 3rem
-                            height: 2px
-                            background: #000
-                            transition: .4s
-                        &::before
-                            content: ''
-                            position: absolute
-                            top: 1rem
-                            width: 3rem
-                            height: 2px
-                            background: #000
-                            transition: .4s
-                    &.active
-                        .button
-                            background: transparent
-                            transition: .2s
-                            &::after
-                                bottom: 0
-                                transition: .3s
-                                -webkit-transform: rotate(135deg)
-                                -moz-transform: rotate(135deg)
-                                -o-transform: rotate(135deg)
-                                transform: rotate(135deg)
-                            &::before
-                                top: 0
-                                transition: .4s
-                                -webkit-transform: rotate(-135deg)
-                                -moz-transform: rotate(-135deg)
-                                -o-transform: rotate(-135deg)
-                                transform: rotate(-135deg)
-        .header-bottom
-            position: absolute
-            right: 1.5rem
-            top: 55%
-            border-top: 1px solid #ebebeb
-            padding: 1.5rem 0
-            .nav-bottom
-                ul
-                    display: flex
-                    // justify-content: space-between
-                    li
-                        font-size: 1.6rem
-                        font-weight: 600
-                        text-transform: uppercase
-                        margin: 0 1.5rem
-                        &:first-child
-                            margin-left: 0
-                            a
-                                font-size: 0
+                                position: relative
                                 &::before
-                                    font-family: 'Material Design Icons'
-                                    content: '\f2dc'
-                                    font-size: 1.8rem
+                                    content: ''
+                                    position: absolute
+                                    bottom: -.5rem
+                                    width: 100%
+                                    height: .2rem
+                                    background: #000
                                     color: #183064
-                        &:last-child
-                            margin-right: 0
-                        &:hover,&.active
+                    .hotline
+                        background: #183064
+                        color: #fff
+                        padding: 0 1.5rem
+                        border-radius: .5rem
+                        margin: 0 2rem
+                        a
+                            display: flex
+                            align-items: center
+                            font-size: 1.2rem
+                            em
+                                font-size: 1.6rem
+                                margin-right: .5rem
+                    .search-box
+                        display: flex
+                        position: relative
+                        &::after
+                            content: '\f349'
+                            font-family: Material Design Icons
+                            position: absolute
+                            top: 50%
+                            right: 1rem
+                            transform: translateY(-50%)
+                            font-size: 2rem
                             color: #183064
+                        input[type=text]
+                            border: 1px solid #ebebeb
+                            border-radius: .5rem
+                            padding: 0 1rem
                             position: relative
+                        button
+                            border: none
+                            display: none
+                        em
+                            position: absolute
+                            top: 50%
+                            right: 2.5rem
+                            transform: translateY(-50%)
+                            font-size: 2rem
+                            color: #183064
+                            cursor: pointer
+                    .language
+                        margin-left: 2rem
+                        a
+                            display: flex
+                            .image
+                                margin-right: .5rem
+                    .button-toggle
+                        display: none
+                        .button
+                            width: 3rem
+                            height: 2px
+                            background: #000
+                            position: relative
+                            transition: .7s
+                            &::after
+                                content: ''
+                                position: absolute
+                                bottom: 1rem
+                                width: 3rem
+                                height: 2px
+                                background: #000
+                                transition: .4s
                             &::before
                                 content: ''
                                 position: absolute
-                                bottom: 0
-                                width: 100%
-                                height: .2rem
+                                top: 1rem
+                                width: 3rem
+                                height: 2px
                                 background: #000
+                                transition: .4s
+                        &.active
+                            .button
+                                background: transparent
+                                transition: .2s
+                                &::after
+                                    bottom: 0
+                                    transition: .3s
+                                    -webkit-transform: rotate(135deg)
+                                    -moz-transform: rotate(135deg)
+                                    -o-transform: rotate(135deg)
+                                    transform: rotate(135deg)
+                                &::before
+                                    top: 0
+                                    transition: .4s
+                                    -webkit-transform: rotate(-135deg)
+                                    -moz-transform: rotate(-135deg)
+                                    -o-transform: rotate(-135deg)
+                                    transform: rotate(-135deg)
+            .header-bottom
+                border-top: 1px solid #ebebeb
+                padding: 1.5rem 0
+                margin-top: 1rem
+                .nav-bottom
+                    ul
+                        display: flex
+                        // justify-content: space-between
+                        li
+                            font-size: 1.6rem
+                            font-weight: 600
+                            text-transform: uppercase
+                            margin: 0 1.5rem
+                            position: relative
+                            &:first-child
+                                margin-left: 0
+                                transform: translateY(-.5rem)
+                                &:hover,&.active
+                                    color: #183064
+                                    position: relative
+                                    &::before
+                                        content: ''
+                                        position: absolute
+                                        bottom: -.5rem
+                                        width: 100%
+                                        height: .2rem
+                                        background: #000
+                                        color: #183064
+                                a
+                                    font-size: 0
+                                    &::before
+                                        font-family: 'Material Design Icons'
+                                        content: '\f2dc'
+                                        font-size: 2rem
+                                        color: #183064
+                            &:last-child
+                                margin-right: 0
+                            &:hover,&.active
                                 color: #183064
+                                position: relative
+                                &::before
+                                    content: ''
+                                    position: absolute
+                                    bottom: 0
+                                    width: 100%
+                                    height: .2rem
+                                    background: #000
+                                    color: #183064
+                        .has-dropdown
+                            position: relative
+                            .dropdown-list
+                                display: none
+                                position: absolute
+                                flex-direction: column
+                                z-index: 999
+                                background: #fff;
+                                box-shadow: 0 0 1rem 0 rgba(0,0,0,.3)
+                                padding: 1rem
+                                li
+                                    margin-bottom: 1rem
+                                    &:first-child
+                                        margin-left: 1.5rem
+                                        transform: translateY(0)
+                                        &:hover
+                                            &::before
+                                                bottom: 0
+                                        a
+                                            font-size: 1.6rem   
+                                            &::before
+                                                display: none
+                            &:hover
+                                .dropdown-list
+                                    display: flex
     .nav-mobile
         width: 40rem
         background: #183064
@@ -272,7 +308,7 @@
                         em
                             position: absolute
                             top: 40%
-                            right: 10%
+                            right: 20%
                             transform: translateY(-50%)
                             font-size: 3rem
                             color: #183064

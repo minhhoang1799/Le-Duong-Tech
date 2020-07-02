@@ -27,11 +27,11 @@ const App = {
         });
         $(el).height(height)
     },
-    InitLazyLoad: () => {
-        return new LazyLoad({
-            elements_selector: ".lazy"
-        });
-    },
+    // InitLazyLoad: () => {
+    //     return new LazyLoad({
+    //         elements_selector: ".lazy"
+    //     });
+    // },
     ScrollTo: y => {
         $('html, body').animate({
             scrollTop: y
@@ -39,17 +39,8 @@ const App = {
     },
     Init: () => {
         App.SetBackground()
-        App.InitLazyLoad()
-        height()
-        togglenav()
-        mappingInit()
-        swiperInit()
-        swiperHomeSlideInit()
-        swiperHome()
-        gallery()
-        toggleViews()
-        viewdetail()
-        giaiphap()
+        // App.InitLazyLoad()
+        
     }
 }
 
@@ -58,6 +49,16 @@ function InitSlider() {
 }
 $(document).ready(function() {
     App.Init()
+    height()
+    togglenav()
+    mappingInit()
+    swiperInit()
+    swiperHomeSlideInit()
+    swiperHome()
+    gallery()
+    toggleViews()
+    viewdetail()
+    giaiphap()
 })
 //height menu
 function height(){
@@ -119,7 +120,7 @@ function mappingInit(){
 		mobileWrapper: ".nav-mobile",
 		mobileMethod: "appendTo",
 		desktopWrapper: "header .header-top",
-		desktopMethod: "insertBefore",
+		desktopMethod: "insertAfter",
 		breakpoint: 1200,
     }).watch()
     
@@ -208,13 +209,14 @@ function giaiphap(){
         speed: 1000,
         slidesPerView: 3,
         spaceBetween: 20,
+        autoplay: true,
         loop: true,
         navigation: {
-            nextEl: '.product-plus .swiper-next',
-            prevEl: '.product-plus .swiper-prev'
+            nextEl: '.giaiphap-plus .swiper-next',
+            prevEl: '.giaiphap-plus .swiper-prev'
         },
         pagination: {
-            el: '.product-plus .swiper-pagination',
+            el: '.giaiphap-plus .swiper-pagination',
             clickable: true
         },
 
@@ -254,7 +256,7 @@ function gallery(){
         });
     var galleryTop = new Swiper('.product-detail .gallery-top', {
     spaceBetween: 10,
-    // autoplay: true,
+    autoplay: true,
     speed: 1000,
     navigation: {
         nextEl: '.product-detail .swiper-next',
@@ -269,6 +271,7 @@ function gallery(){
         slidesPerView: 3,
         spaceBetween: 20,
         loop: true,
+        autoplay: true,
         navigation: {
             nextEl: '.product-plus .swiper-next',
             prevEl: '.product-plus .swiper-prev'
@@ -295,11 +298,19 @@ function gallery(){
 function toggleViews(){
     $('.product-detail .detail-wrapper .button-bottom .button').on('click', function(){
         $('.product-detail .detail-wrapper .content').toggleClass('active')
+        $('.product-detail .detail-wrapper .button-bottom .button').toggleClass('active')
+        $('.product-detail .detail-wrapper .button-bottom .button-2').toggleClass('active')
+    })
+    $('.product-detail .detail-wrapper .button-bottom .button-2').on('click', function(){
+        $('.product-detail .detail-wrapper .content').toggleClass('active')
+        $('.product-detail .detail-wrapper .button-bottom .button').toggleClass('active')
+        $('.product-detail .detail-wrapper .button-bottom .button-2').toggleClass('active')
     })
 }
 function viewdetail(){
     var e =  $('.product-detail .detail-wrapper .content').outerHeight()
-    if(e >= 115){
+        console.log(e);
+    if(e >= 114){
        $('.product-detail .detail-wrapper .button-bottom .button').css({
         "display": "block"
     })  

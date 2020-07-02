@@ -180,25 +180,27 @@ Facebook: https://fb.com/canhcam.vn
                             <line class="cls-5" x1="198.57" y1="129.51" x2="533.06" y2="129.51"/>
                         </svg></a>
                         </div>
-                        <div class="header-top">
-                            <div class="nav-top">
-                                <portal:ModuleWrapper ID="mdl153" runat="server" ConfigureModuleId="153" />
-                                <div class="hotline">
-                                    <portal:ModuleWrapper ID="mdl154" runat="server" ConfigureModuleId="154" />
+                        <div class="header-right">
+                            <div class="header-top">
+                                <div class="nav-top">
+                                    <portal:ModuleWrapper ID="mdl153" runat="server" ConfigureModuleId="153" />
+                                    <div class="hotline">
+                                        <portal:ModuleWrapper ID="mdl154" runat="server" ConfigureModuleId="154" />
+                                    </div>
+                                    <div class="search-box">
+                                        <portal:ModuleWrapper ID="mdl155" runat="server" ConfigureModuleId="155" />
+                                    </div>
+                                    <div class="language"><a href="#">
+                                        <portal:ModuleWrapper ID="mdl156" runat="server" ConfigureModuleId="156" />
+                                    </div>
+                                    <div class="button-toggle">
+                                        <div class="button"></div>
+                                    </div>
+                            </div>
+                            <div class="header-bottom">
+                                <div class="nav-bottom">
+                                    <portal:ModuleWrapper ID="mdl157" runat="server" ConfigureModuleId="157" />
                                 </div>
-                                <div class="search-box">
-                                    <portal:ModuleWrapper ID="mdl155" runat="server" ConfigureModuleId="155" />
-                                </div>
-                                <div class="language"><a href="#">
-                                    <portal:ModuleWrapper ID="mdl156" runat="server" ConfigureModuleId="156" />
-                                </div>
-                                <div class="button-toggle">
-                                    <div class="button"></div>
-                                </div>
-                        </div>
-                        <div class="header-bottom">
-                            <div class="nav-bottom">
-                                <portal:ModuleWrapper ID="mdl157" runat="server" ConfigureModuleId="157" />
                             </div>
                         </div>
                     </div>
@@ -233,6 +235,7 @@ Facebook: https://fb.com/canhcam.vn
                 <asp:Panel ID="divAltContent2" runat="server" CssClass="altcontent2">
                     <asp:ContentPlaceHolder ID="altContent2" runat="server"></asp:ContentPlaceHolder>
                 </asp:Panel>
+                <portal:ModuleWrapper ID="mdl199" runat="server" ConfigureModuleId="199" />
             </main>
             <!-- ////////////// End Main ////////////// -->
             <!-- ////////////// Footer ////////////// -->
