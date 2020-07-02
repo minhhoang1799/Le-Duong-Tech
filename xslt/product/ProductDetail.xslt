@@ -36,6 +36,7 @@
                     </div>
                     <div class="button-bottom">
                         <div class="button">Xem thêm</div>
+                        <div class="button-2">Đóng</div>
                     </div>
                 </div>
             </div>

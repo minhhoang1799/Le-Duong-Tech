@@ -1,0 +1,23 @@
+section.giaiphap-plus
+    .main-title
+        h2 Giải pháp khác
+    .container
+        .slider
+            .swiper-container
+                .swiper-wrapper
+                    - for(i=1;i<4;i++)
+                        .swiper-slide
+                            .product
+                                .image
+                                    img(src="./img/product/product1.png", alt="")
+                                .title
+                                    a(href="#") Fire and gas system
+                                .content-wrapper
+                                    .content
+                                        p Cung cấp các dịch vụ Gas Mapping, thiết kế, thi công, lắp đặt và hướng dẫn vận hành hệ thống hệ thống giám sát và dò rò rỉ khí, phát hiện tia lửa.
+                                    .button
+                                        a(href="#") Xem chi tiết
+            .swiper-prev
+                em.lnr.lnr-arrow-left
+            .swiper-next
+                em.lnr.lnr-arrow-right
