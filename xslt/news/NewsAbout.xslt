@@ -5,11 +5,13 @@
         <section class="about-wrapper" setbackground="/Data/Sites/1/media/home/h-1/background.png">
             <div class="container">
                 <xsl:apply-templates select="/ZoneList/Zone[1]" mode="Zone1"></xsl:apply-templates>
+                
             </div>
         </section>
         <section class="about">
             <div class="container">
                 <xsl:apply-templates select="/ZoneList/Zone" mode="Zone2"></xsl:apply-templates>
+                
             </div>
         </section>
     </xsl:template>
@@ -61,7 +63,6 @@
             </div>
         </div>
     </xsl:template>
-    
     <xsl:template match="Zone" mode="Zone2">
         <xsl:if test="position()&gt;1">
             <xsl:apply-templates select="News" mode="Zone2-News"></xsl:apply-templates>
