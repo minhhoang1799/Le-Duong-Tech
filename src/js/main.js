@@ -49,6 +49,7 @@ function InitSlider() {
 }
 $(document).ready(function() {
     App.Init()
+    checkIE()
     height()
     togglenav()
     mappingInit()
@@ -98,15 +99,15 @@ function mappingInit(){
 		desktopWrapper: "header .nav-top .language",
 		desktopMethod: "insertBefore",
 		breakpoint: 1200,
-    }).watch()
+    }).watch();
     var navtop = new MappingListener({
-		selector: "header .nav",
+		selector: "header .nav-menu-top",
 		mobileWrapper: ".nav-mobile",
 		mobileMethod: "appendTo",
-		desktopWrapper: "header .nav-top",
+		desktopWrapper: ".nav-top",
 		desktopMethod: "prependTo",
 		breakpoint: 1200,
-    }).watch()
+    }).watch();
     var hotline = new MappingListener({
 		selector: "header .hotline",
 		mobileWrapper: ".nav-mobile",
@@ -114,7 +115,7 @@ function mappingInit(){
 		desktopWrapper: "header .nav-top .search-box",
 		desktopMethod: "insertBefore",
 		breakpoint: 1200,
-    }).watch()
+    }).watch();
     var navbottom = new MappingListener({
 		selector: "header .header-bottom",
 		mobileWrapper: ".nav-mobile",
@@ -294,7 +295,12 @@ function gallery(){
 	})
 }
 
-
+function checkIE(){
+    var isIE = /*@cc_on!@*/false || !!document.documentMode;
+    if(isIE == true){
+        $('.nav-menu-top-ie').removeClass('hidden')
+    }
+}
 function toggleViews(){
     $('.product-detail .detail-wrapper .button-bottom .button').on('click', function(){
         $('.product-detail .detail-wrapper .content').toggleClass('active')

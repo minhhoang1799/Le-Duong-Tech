@@ -183,7 +183,13 @@ Facebook: https://fb.com/canhcam.vn
                         <div class="header-right">
                             <div class="header-top">
                                 <div class="nav-top">
-                                    <portal:ModuleWrapper ID="mdl153" runat="server" ConfigureModuleId="153" />
+                                    <div class="nav-menu-top-ie hidden">
+                                        <portal:ModuleWrapper ID="mdl200" runat="server" ConfigureModuleId="200" />
+                                    </div>
+                                    <div class="nav-menu-top">
+
+                                        <portal:ModuleWrapper ID="mdl153" runat="server" ConfigureModuleId="153" />
+                                    </div>
                                     <div class="hotline">
                                         <portal:ModuleWrapper ID="mdl154" runat="server" ConfigureModuleId="154" />
                                     </div>
